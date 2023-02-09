@@ -1,7 +1,9 @@
+import { Task } from "../task/Task";
 import { Project } from "../project/Project";
 import { JsonValue } from "type-fest";
 
 export type User = {
+  asssignedTo?: Array<Task>;
   createdAt: Date;
   firstName: string | null;
   id: string;
